@@ -15,6 +15,7 @@ Yet another [Beamer](https://en.wikipedia.org/wiki/Beamer_(LaTeX)) theme.
 
 ## Example
 
+- Minimal size example in [hello.tex](./hello.tex).
 - Example slides in [example.md](./example.md) (using [Pandoc](https://en.wikipedia.org/wiki/Pandoc)'s markdown).
 - Rendered in [example.pdf](./example.pdf).
 - Generate them via `nix-build` — or by installing pandoc and a LaTeX suite and via `pandoc -st beamer example.md -o example.pdf`.
