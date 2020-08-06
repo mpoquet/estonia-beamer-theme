@@ -1,0 +1,54 @@
+% Theme done by Millian Poquet in 2020.
+% This is free and unencumbered software released into the public domain.
+% For more information, please refer to <http://unlicense.org/>
+
+\mode<presentation>
+% Main options (based on Frankfurt)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{sections/subsections in toc}[square]
+\setbeamertemplate{items}[square]
+
+
+% Color theme
+%%%%%%%%%%%%%
+\definecolor{estonian-blue}{HTML}{0073cf}
+\definecolor{colorbrewer-orange}{HTML}{ff7f00}
+\definecolor{colorbrewer-red}{HTML}{e31a1c}
+
+\usecolortheme[named=estonian-blue]{structure}
+\setbeamercolor*{example text}{fg=colorbrewer-orange}
+\setbeamercolor*{alerted text}{fg=colorbrewer-red}
+
+% Adapted from orchid
+\setbeamercolor*{block title}{use=structure,fg=white,bg=estonian-blue}
+\setbeamercolor*{block title alerted}{use=alerted text,fg=white,bg=colorbrewer-red}
+\setbeamercolor*{block title example}{use=example text,fg=white,bg=colorbrewer-orange}
+
+\setbeamercolor*{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor*{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor*{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+
+%Adapted from whale
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=estonian-blue}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=estonian-blue}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=estonian-blue}
+\setbeamercolor*{palette quaternary}{fg=white,bg=black}
+
+\setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=estonian-blue}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=estonian-blue}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor*{section in toc}{fg=normal text.fg}
+\setbeamercolor*{subsection in toc}{fg=normal text.fg}
+
+\mode
+<all>
